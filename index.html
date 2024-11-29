@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal porfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1f70ba21a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h3  class="logo" >
+            <div style=" text-align: center; padding: 20px;">
+              <span style="color: red; font-family: Montserrat, sans-serif; font-size: 48px; font-weight: bold;">J</span>
+              <span style="color: white; font-family: Montserrat, sans-serif; font-size: 48px; font-weight: bold;">egan.</span>
+            </div>
+            
+          </h3>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>React Developer</p>
+          <h1>Hi,I'm <span>Jegan</span><br />From Tirunelveli</h1>
+        </div>
+      </div>
+    </div>
+    <! ----------about-------------- !>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="JEGAN-IMG.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              My name is Poovalingam Jegan, and I'm from Tirunelveli. I completed my B.Sc. in Computer Science from Sri Paramakalyani College. I have a passion for programming, blogging, and photography. I'm always eager to learn new things. Currently, I'm focused on learning web development to enhance my skills and gain visibility. 
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Certfications
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web app Interface</li>
+                <li>
+                  <span>Web Development</span><br />Developing a user-friendly
+                  website
+                </li>
+                <li>
+                  <span>Blogging</span><br />scribbling out the things I known
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024 </span><br />HTML, Css</li>
+                <li><span>2024</span><br />Javascript</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020</span><br />Andrews matriculation higher secondary
+                  school
+                </li>
+                <li><span>2021-2024</span><br />Sri Paramkalyani college</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!--------------services--------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Our websites are designed to work seamlessly on all devices. We
+              use the most advanced techniques in web design—including
+              responsive, mobile optimization, HTML5 and CSS3, and several
+              different CMS models—to best suit the needs of our clients. From
+              brochure websites to e-commerce solutions, we provide a superior,
+              customized user experience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              When it comes to creating an impressive UX portfolio, it’s
+              important to understand exactly what your portfolio should
+              achieve. What information should your portfolio present? What do
+              you want people to learn about you and your work when they land on
+              your portfolio? Your UX design portfolio is not just a virtual
+              gallery of all your most beautiful work. It’s a carefully crafted
+              story that offers a behind-the-scenes look at your methods and
+              processes.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------Contact-------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >jeganlingam4@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>9626741922</p>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/__jekn__?igsh=ajgwaXZpaHJzaTll"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              </a>
+              <a href="https://github.com/JeganLingam18"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/jegan-lingam18"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your name"
+                required
+              /><br />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                cols="80"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Ⓒ PoovalingamJegan 2024</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script type="text/javascript">
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
