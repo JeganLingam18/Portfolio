@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Personal porfolio website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/1f70ba21a6.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <!>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <h3  class="logo" >
-            <div style=" text-align: center; padding: 20px;">
-              <span style="color: red; font-family: Montserrat, sans-serif; font-size: 48px; font-weight: bold;">J</span>
-              <span style="color: white; font-family: Montserrat, sans-serif; font-size: 48px; font-weight: bold;">egan.</span>
-            </div>
-            
-          </h3>
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>React Developer</p>
-          <h1>Hi,I'm <span>Jegan</span><br />From Chennai</h1>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Personal porfolio website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/1f70ba21a6.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<!>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h3 class="logo">
+          <div style=" text-align: center; padding: 20px;">
+            <span style="color: red; font-family: Montserrat, sans-serif; font-size: 48px; font-weight: bold;">J</span>
+            <span
+              style="color: white; font-family: Montserrat, sans-serif; font-size: 48px; font-weight: bold;">egan.</span>
+          </div>
+
+        </h3>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>React Developer</p>
+        <h1>Hi,I'm <span>Jegan</span><br />From Chennai</h1>
       </div>
     </div>
-    <! ----------about-------------- !>
+  </div>
+  <! ----------about-------------- !>
     <div id="about">
       <div class="container">
         <div class="row">
@@ -43,10 +43,19 @@
             <img src="JEGAN-IMG.jpg" alt="" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
+            <h1 class="sub-title">About Me</h1>
             <p>
-              My name is Poovalingam Jegan, and I'm from Tirunelveli. I completed my B.Sc. in Computer Science from Sri Paramakalyani College. I have a passion for programming, blogging, and photography. I'm always eager to learn new things. Currently, I'm focused on learning web development to enhance my skills and gain visibility. 
+              I'm <strong>Poovalingam Jegan</strong> from Chennai. I completed my <strong>B.Sc. in Computer
+                Science</strong>. I have a strong interest in <strong>web technologies</strong>, especially in
+              <strong>frontend development</strong>.
+
+              After finishing college, I joined an academy where I successfully completed a <strong>MERN stack
+                course</strong>, which strengthened my skills in building dynamic and responsive web applications.
+
+              My goal is to continue improving my skills and contribute to developing scalable, user-friendly solutions
+              that enhance user experience.
             </p>
+
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('Skills')">
                 Skills
@@ -58,20 +67,18 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br />Designing web app Interface</li>
+                <li><span>Frontend</span><br />HTML,CSS,JavaScript,React.js</li>
                 <li>
-                  <span>Web Development</span><br />Developing a user-friendly
-                  website
+                  <span>Backend</span><br />Node.js,Express.js,MongoDB
                 </li>
                 <li>
-                  <span>Blogging</span><br />scribbling out the things I known
+                  <span>Tools</span><br />GitHub,Postman,MongoDB Compass
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2024 </span><br />HTML, Css</li>
-                <li><span>2024</span><br />Javascript</li>
+                <li><span>2024 </span><br />MERN Stack Development</li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
@@ -87,44 +94,44 @@
         </div>
       </div>
     </div>
-  
-
-    <!--------------services--------------------->
-    <div id="services">
+    <!------------------Project--------------------->
+    <div id="projects">
       <div class="container">
-        <h1 class="sub-title">My services</h1>
-        <div class="services-list">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+
+          <!-- CRUD User Management System -->
           <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Development</h2>
+            <img
+              src="./DALL·E 2025-03-14 12.17.12 - A modern, sleek user interface design representing a CRUD User Management System. The image should feature user profile icons, add_edit_delete buttons.webp"
+              alt="CRUD User Management System">
+            <h2>CRUD User Management System</h2>
             <p>
-              Our websites are designed to work seamlessly on all devices. We
-              use the most advanced techniques in web design—including
-              responsive, mobile optimization, HTML5 and CSS3, and several
-              different CMS models—to best suit the needs of our clients. From
-              brochure websites to e-commerce solutions, we provide a superior,
-              customized user experience.
+              A full-featured user management system built using **React.js** and **Node.js**.
+              It includes features like **user creation, updating, deleting, and data persistence**
+              using **MongoDB**. The system is responsive and provides real-time data updates.
             </p>
-            <a href="#">Learn more</a>
+            <a href="https://jeganlingam18.github.io/CRUD-Method/" target="_blank">View Project</a>
           </div>
+
+          <!-- Player User Hub Project -->
           <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>UI/UX Design</h2>
+            <img
+              src="./DALL·E 2025-03-14 12.28.51 - A dynamic and engaging football player hub interface. The image should feature a player profile, match stats, leaderboard, and interactive buttons. Us.webp"
+              alt="Player User Hub Project">
+            <h2>Player User Hub</h2>
             <p>
-              When it comes to creating an impressive UX portfolio, it’s
-              important to understand exactly what your portfolio should
-              achieve. What information should your portfolio present? What do
-              you want people to learn about you and your work when they land on
-              your portfolio? Your UX design portfolio is not just a virtual
-              gallery of all your most beautiful work. It’s a carefully crafted
-              story that offers a behind-the-scenes look at your methods and
-              processes.
+              A dynamic user platform designed using **React.js** and **Express.js**.
+              It allows users to register, manage profiles, and track real-time data.
+              The app features an intuitive interface and secure authentication.
             </p>
-            <a href="#">Learn more</a>
+            <a href="https://jeganlingam18.github.io/Player-Search-Hub/" target="_blank">View Project</a>
           </div>
+
         </div>
       </div>
     </div>
+
     <!-- ------------Contact-------------- -->
     <div id="contact">
       <div class="container">
@@ -132,45 +139,22 @@
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
             <p>
-              <i class="fa-solid fa-paper-plane"></i
-              >jeganlingam4@gmail.com
+              <i class="fa-solid fa-paper-plane"></i>jeganlingam4@gmail.com
             </p>
             <p><i class="fa-solid fa-square-phone"></i>9626741922</p>
             <div class="social-icons">
-              <a
-                href="https://www.instagram.com/__jekn__?igsh=ajgwaXZpaHJzaTll"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
+              <a href="https://www.instagram.com/__jekn__?igsh=ajgwaXZpaHJzaTll"><i
+                  class="fa-brands fa-instagram"></i></a>
               </a>
-              <a href="https://github.com/JeganLingam18"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/jegan-lingam18"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+              <a href="https://github.com/JeganLingam18"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/jegan-lingam18"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div class="contact-right">
-            <form>
-              <input
-                type="text"
-                name="Name"
-                placeholder="Your name"
-                required
-              /><br />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                cols="80"
-                placeholder="Your message"
-                required
-              ></textarea>
+            <form id="contactForm">
+              <input type="text" name="name" placeholder="Your name" required /><br />
+              <input type="email" name="email" placeholder="Your email" required />
+              <textarea name="message" rows="6" cols="80" placeholder="Your message" required></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
           </div>
@@ -205,5 +189,45 @@
         sidemenu.style.right = "-200px";
       }
     </script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+      // ✅ Initialize EmailJS with your Public Key
+      (function () {
+        emailjs.init("GSU_NpOPUzA01d7qu"); // Replace with your EmailJS public key
+      })();
+
+      // ✅ Form Submission Handling
+      document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevents default form submission
+
+        // ✅ Template Parameters (Sent to EmailJS)
+        const templateParams = {
+          from_name: document.querySelector('[name="name"]').value,
+          from_email: document.querySelector('[name="email"]').value,
+          message: document.querySelector('[name="message"]').value
+        };
+
+        // ✅ Send Email Using EmailJS
+        emailjs.send(
+          'service_4hn8hpi', // ✅ Your Service ID
+          'template_vb9pfpg', // ✅ Your Template ID
+          templateParams
+        ).then(
+          function (response) {
+            alert('Message sent successfully!');
+            console.log('SUCCESS!', response.status, response.text);
+          },
+          function (error) {
+            alert('Failed to send message.');
+            console.log('FAILED...', error);
+          }
+        );
+
+        // ✅ Clear Form After Submission
+        document.getElementById('contactForm').reset();
+      });
+    </script>
+    </body>
+
 </html>
